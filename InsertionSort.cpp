@@ -18,21 +18,3 @@ void InsertionSort(T *array, int size )
 		array[j] = element;
 	}
 }
-
-int main()
-{
-	int array[] = { 5, 14, 2, -3, 0, 8, 11, 7, 1, -1 };
-
-	int size = sizeof(array) / sizeof(*array);
-	
-	InsertionSort<int>(array, size);
-
-	for (size_t i = 0; i < size; i++)
-	{
-		cout << array[i] << " ";
-	}
-	cout << endl;
-
-    return 0;
-}
-
