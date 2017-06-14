@@ -37,20 +37,3 @@ void QuickSort(T *array, int start, int end)
 	QuickSort(array, start, pivotIndex - 1);
 	QuickSort(array, pivotIndex + 1, end);
 }
-
-int main()
-{
-	int array[] = { 5, 14, 2, -3, 0, 8, 11, 7, 1, -1 };
-
-	int start = 0;
-	int end = sizeof(array) / sizeof(*array);
-
-	QuickSort<int>(array, start, end - 1);
-	for (size_t i = 0; i < 10; i++)
-	{
-		cout << array[i] << " ";
-	}
-	cout << endl;
-    return 0;
-}
-
