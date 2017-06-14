@@ -76,21 +76,3 @@ T* MergeSort(T *array, int size)
 
 	return merge(sortedLeftArray, sortedRightArray, leftSize,  rightSize);
 }
-
-int main()
-{
-	int arrayOne[] = { 5, 14, 2, -3, 0, 8, 11, 7, 1, -1 ,3, 20, 88, 111, 78, 15, -81 ,-43, 50, 18, -54554511, 74, 41, 101 };
-
-	int size = sizeof(arrayOne) / sizeof(*arrayOne);
-
-	int *result = MergeSort<int>(arrayOne, size);
-	
-	for (size_t i = 0; i < size; i++)
-	{
-		cout << result[i] << " ";
-	}
-	cout << endl;
-
-	return 0;
-}
-
