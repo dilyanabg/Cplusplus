@@ -12,7 +12,7 @@ void swapItems(T &first, T &second)
 
 void heapify(int array[], int size, int wall)
 {
-	if (wall >= 0) // òîâà ìàé å èçëèøíî
+	if (wall >= 0) // Ã²Ã®Ã¢Ã  Ã¬Ã Ã© Ã¥ Ã¨Ã§Ã«Ã¨Ã¸Ã­Ã®
 	{
 		size_t j = 0;
 
@@ -63,21 +63,3 @@ void HeapSort(int array[], int size)
 		}
 	}
 }
-
-int main()
-{
-	int array[] = { 88, 85, 83, 72, 73, 42, 57, 6, 48, 60 }; 
-	
-	int size = sizeof(array) / sizeof(*array);
-
-	HeapSort(array, size);
-
-	for (size_t i = 0; i < size; i++)
-	{
-		cout << array[i] << " ";
-	}
-	cout << endl;
-
-    return 0;
-}
-
